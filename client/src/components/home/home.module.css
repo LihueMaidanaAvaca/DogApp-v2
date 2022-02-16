@@ -1,0 +1,48 @@
+.cards{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.div_render {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 1370px 700px; */
+    /* background: url(https://images8.alphacoders.com/106/1068709.jpg); */
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+/* .title {
+    
+    border-radius: 120px;
+    font-size: 100px;
+} */
+
+.buttons {
+    padding: 7px;
+    font-size: 24px;
+    color: rgb(3, 30, 150);
+    background: rgb(199, 139, 27);
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: 0 9px #b8941e; */
+}
+
+.buttons:active {
+    background: #4ed6ff;
+    box-shadow: 0 5px #0b6783;
+    transform: translateY(1px);
+}

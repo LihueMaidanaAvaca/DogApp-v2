@@ -1,0 +1,32 @@
+/* .paginate{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    
+} */
+
+/* .numbers{
+    color: aliceblue;
+    background-color: rgb(177, 115, 44);
+    padding: 1em;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+} */
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
