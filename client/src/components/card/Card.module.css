@@ -22,9 +22,10 @@
 .img {
     border-radius: 20px;
     margin: 7px;
-    width: 200px; 
+    width: 230px; 
     height: 200px;
     overflow: hidden;
+    /* object-fit: cover; */
 }
 
 .temps {

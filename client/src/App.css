@@ -1,7 +1,7 @@
 .App {
-  position: relative;
-    height: 100vh;
-    width: 100vw;
+  /* position: relative; */
+    /* height: 100vh; */
+    /* width: 100vw; */
   /* background: url(https://images8.alphacoders.com/106/1068709.jpg); */
   text-align: center;
   color:rgb(0, 0, 0);
@@ -11,7 +11,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
 }
 
@@ -23,7 +23,7 @@
 
 .App-header {
   background-color: #0546c8;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;

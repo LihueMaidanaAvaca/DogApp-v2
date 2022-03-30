@@ -1,0 +1,65 @@
+.page{    
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.container{
+    background-color: rgba(160, 117, 0, 0.37);
+    margin: 0px 20px 0px 20px;
+    min-width: 75%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+.container input{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    background-color: rgba(160, 117, 0, 0.514) ;
+    color: aliceblue;
+}
+
+.container p{
+    color: rgb(255, 0, 0);
+    margin: 0px;
+}
+
+.add{
+    align-items: flex-end;
+    height: 50px;
+    width: 150px;
+    background-color: rgba(160, 117, 0, 0.514);
+    border: none;
+    color: blanchedalmond;
+}
+
+.add:hover{
+    background-color: rgb(250, 233, 0);
+    color: black;
+
+}
+
+.divPer{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    background-color: rgba(160, 117, 0, 0.514) ;
+    color: aliceblue;
+
+}
+
+.divTem{
+    display: inline-block;
+}

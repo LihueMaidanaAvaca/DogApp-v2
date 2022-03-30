@@ -1,0 +1,99 @@
+.box {
+    position: absolute;
+    top: 4%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    background:rgb(233, 144, 11);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+/* .box:hover > .txt{
+width: 240px;
+    padding: 0 4px;
+} */
+
+/* .box:hover > .btn{
+ background: azure;
+} */
+
+/* .btn {
+    color: rgb(206, 141, 21);
+    float:right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:rgb(156, 89, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+} */
+
+   .btn {
+    pointer-events:visible;
+   }
+
+/* .txt {
+    border: none;
+    background: rgb(233, 144, 11);
+    outline: none;
+    float: left;
+    padding: 0;
+    color: azure;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+} */
+
+@media (min-width: 1250px) {
+    .box {
+        position: absolute;
+        top: 4%;
+        left: 75%;
+        transform: translate(-50%,-50%);
+        background:rgb(233, 144, 11);
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+    .box:hover > .txt{
+    width: 240px;
+        padding: 0 4px;
+    }
+    
+    .box:hover > .btn{
+     background: azure;
+    }
+    
+    .btn {
+        color: rgb(206, 141, 21);
+        float:right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background:rgb(156, 89, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        pointer-events:visible;
+    }
+    
+    .txt {
+        border: none;
+        background: rgb(233, 144, 11);
+        outline: none;
+        float: left;
+        padding: 0;
+        color: azure;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+    }
+    
+}

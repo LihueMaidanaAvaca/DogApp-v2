@@ -8,9 +8,9 @@ import Paginate from '../paginate/Paginate';
 import SearchBar from '../searchbar/SearchBar';
 import Loading from '../loading/Loading';
 import styles from './home.module.css'
+import imgd from './nicedog.png'
 
-
-export function Home(){
+export function Home(imgd){
     const dispatch= useDispatch()
     const allDogs = useSelector((state) => state.allDogs)
     const [orden, setOrden] = useState('')
@@ -74,31 +74,33 @@ export function Home(){
     
     
     return(
-        <div className={styles.div_render}>
-           <h1>ADOG ME</h1>
-           <button className={styles.buttons}><Link to= '/adopt'>Adopt Dog</Link></button>
-           <button className={styles.buttons}onClick={e=> {handleClick(e)}}>Reload Dogs</button>
-           <div>
-               <select onChange= {e => handleSort(e)}>
-                   <option value= 'asd'>ASCENDING</option>
-                   <option value= 'des'>DESCENDING</option>
-               </select>
-               <select onChange= {e => handleSortWeight(e)}>
-                   <option value= 'des'>LIGHTER</option>
-                   <option value= 'asd'>HEAVIER</option>
-               </select>
-               <select onChange={(e)=>handleFilterTemp(e)}>
+        <div className={styles.div_render}><h1>DOG APP</h1>
+           <div className={styles.navbar}>
+               <select defaultValue='default' onChange={(e)=>handleFilterTemp(e)}>
                     <option name='temp' key={'a'}>Temperaments</option>
                     {temperaments.map((tem,i)=>(
                         <option name='temperaments'key={i} value={tem.name}>{tem.name}</option>
                         ))}
                 </select>
-               <select onChange= {e => handleFilterCreated(e)}>
+               <select defaultValue='default' onChange= {e => handleSort(e)}>
+                  <option value='default' disabled='disabled'>ABC Order</option>
+                   <option value= 'asd'>ASCENDING</option>
+                   <option value= 'des'>DESCENDING</option>
+               </select>
+               <select defaultValue='default' onChange= {e => handleSortWeight(e)}>
+                   <option value='default' disabled='disabled'>Weight Order</option>
+                   <option  value= 'des'>LIGHTER</option>
+                   <option value= 'asd'>HEAVIER</option>
+               </select>
+               <select defaultValue='default' onChange= {e => handleFilterCreated(e)}>
                    <option value= 'allDogs'>EVERYDOG</option>
-                   <option value= 'created'>ADOPTED</option>
+                   <option value= 'created'>ADDED</option>
                    <option value= 'api'>BREEDS</option>
                </select>
+                        <button className={styles.buttons}onClick={e=> {handleClick(e)}}>Reset</button>
+                        <Link to= '/addog'className={styles.buttons}>AddDog+</Link>
                <SearchBar/>
+               </div>
                         <Paginate
                         dogsPerPage= {dogsPerPage}
                         allDogs={allDogs.length}
@@ -113,7 +115,7 @@ export function Home(){
                        <div key={dog.id}>
                           <Link to={`/${dog.id}`}>
                           <Card name={dog.name} img={dog.image} weightmin={dog.weightmin} 
-                          weightmax={dog.weightmax} temp={dog.Temperaments} id={dog.id}
+                          weightmax={dog.weightmax} temp={dog.Temperaments} id={dog.id} life_span={dog.life_span}
                           />
                           </Link>
                       </div> 
@@ -121,7 +123,6 @@ export function Home(){
                     }):<p>Loading...</p>
                 }
                 </div>
-           </div>
        </div>
        
        )

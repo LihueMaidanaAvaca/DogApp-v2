@@ -36,13 +36,18 @@ const getApiInfo = async () => {
             id: dog.id,
             name: dog.name,
             height: dog.height.metric,
+            height : wht = dog.height.metric?.split('-'),
+            heightmin : ' '+wht[0],
+            heightmax : wht[1]+' ',
             weight : wht = dog.weight.metric?.split('-'),
             weightmin : ' '+wht[0],
             weightmax : wht[1]+' ',
-            lifespan: dog.life_span,
+            life_span: lsn = dog.life_span.split('y'),
+            lifespan: lsn[0],
             Temperaments: dog.temperament?.split(', ').map(t=> { 
                 return{ name: t}}),
-            image: dog.image.url
+            image: dog.image.url,
+            tempers: dog.temperament
         };
     });
     return apiInfo;
@@ -108,10 +113,10 @@ router.post('/dog', async (req, res) =>{
         heightmax,
         weightmin,
         weightmax,
-        life_span,
+        lifespan,
         image,
         created,
-        temperaments
+        temperaments,
     } = req.body
 
     let dogCreated = await Dog.create({
@@ -120,7 +125,7 @@ router.post('/dog', async (req, res) =>{
         heightmax,
         weightmin,
         weightmax,
-        life_span,
+        lifespan,
         image,
         created
     })
@@ -129,9 +134,7 @@ router.post('/dog', async (req, res) =>{
         let tDB = await Temperament.findOrCreate({
             where: { name : t}
         })
-        console.log('aca estas mas cerca del error', tDB)
     dogCreated.addTemperament( tDB[0]) })
-    console.log('esto y ya esta' ,dogCreated)
     res.json(dogCreated)
 })
 

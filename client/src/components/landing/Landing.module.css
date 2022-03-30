@@ -1,0 +1,46 @@
+.land{
+    display: flex;
+    height: 100vh;
+}
+
+.img{
+    background-image: url(dog2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+}
+
+.in_flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alfa Slab One', cursive;
+    height: 70% ;
+    margin: 5px;
+    font-size: 9vw ;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    /* font-size: 2em; */
+    font-family: 'Fredoka One', cursive;
+    height: 30%;
+    /* width: 100%; */
+    font-size: 3vw;
+
+}
+
+
+.welcome:visited {
+    color: aliceblue;
+}

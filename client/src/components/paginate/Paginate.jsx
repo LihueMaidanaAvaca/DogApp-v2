@@ -10,15 +10,15 @@ export default function Paginate ({dogsPerPage, allDogs, paginate}){
          pageNumber.push(i+1)
     }
     return(
-        <nav>
-            <ul class="pagination">
+         
+            <ul class={styles.pagination}>
                 {pageNumber && pageNumber.map(num =>(
-                    <div key={num}>
-                    <div onClick={()=> paginate(num)}>{num}</div>
-                    </div>                
+                    <li key={num}>
+                    <a onClick={()=> paginate(num)}>{num}</a>
+                    </li>                
                 ))}
             </ul>
-        </nav>
+        
     )
 
 }

@@ -1,0 +1,80 @@
+.container{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+   .home{
+    margin: 0%;
+    font-size: large;
+    color: black;
+    font-family: 'Alfa Slab One', cursive;
+    }
+
+
+
+.details{
+    margin: 175px 10px 10px 10px;
+    background-color: rgba(160, 117, 0, 0.37);
+    border-radius: 20px;
+    padding-bottom: 7px;
+    max-width: 950px;;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.title {
+    margin: 0%;
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(255, 239, 219);
+    background-color: rgb(180, 115, 30);
+    border-radius: 20px 20px 0px 0px;
+    font-size: 3vh;
+    
+}
+
+
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+   .img {
+    width: 300px;  
+    border-radius: 20px;
+    margin: 20px;
+    }
+
+   .text{
+    margin: 20px;
+    font-size: large;
+    font-family: 'Fredoka', sans-serif;
+    justify-content: space-between;
+    }
+
+@media (max-width: 700px) {
+    .info {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .details{
+        margin: 0px 10px 10px 10px;
+        background-color: rgba(160, 117, 0, 0.37);
+        border-radius: 20px;
+        padding-bottom: 7px;
+        max-width: 1200px;;
+        display: flex;
+        flex-direction: column;
+    }
+}
