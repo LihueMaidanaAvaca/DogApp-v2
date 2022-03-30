@@ -1,10 +1,9 @@
 import styles from './Landing.module.css'
 import React from 'react'
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 export function Landing() {
-    const dogs = useSelector((state) => state.allDogs)
+    
     return (
         <section className={styles.land}>
             <div className={styles.img}>

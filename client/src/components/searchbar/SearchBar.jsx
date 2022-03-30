@@ -24,7 +24,7 @@ export default function SearchBar(){
             <input class={styles.txt} type= 'text' placeholder = "Search..."
             onChange= {(e) => handleInputChange(e)}
             />
-            <a class={styles.btn} type='submit' onClick={(e)=>handleSubmit(e)}>
+            <a href class={styles.btn} type='submit' onClick={(e)=>handleSubmit(e)}>
             <i class="fa-solid fa-magnifying-glass"></i>
             </a>
         </div>

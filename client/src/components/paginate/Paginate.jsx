@@ -14,7 +14,7 @@ export default function Paginate ({dogsPerPage, allDogs, paginate}){
             <ul class={styles.pagination}>
                 {pageNumber && pageNumber.map(num =>(
                     <li key={num}>
-                    <a onClick={()=> paginate(num)}>{num}</a>
+                    <a href onClick={()=> paginate(num)}>{num}</a>
                     </li>                
                 ))}
             </ul>
