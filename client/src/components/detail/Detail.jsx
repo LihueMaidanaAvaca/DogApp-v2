@@ -34,7 +34,7 @@ export default function Detail(props){
                     
                     
                     <div className={styles.info}>
-                       <img className={styles.img} src={myDog[0].image}  />
+                       <img className={styles.img} src={myDog[0].image} alt="" />
                     
                        <div class={styles.text}>
                            <h2>Weight:{myDog[0].weightmin}Kg -{myDog[0].weightmax}Kg</h2>

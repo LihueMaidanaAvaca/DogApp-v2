@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 import Card from '../card/Card';
 import Paginate from '../paginate/Paginate';
 import SearchBar from '../searchbar/SearchBar';
-import Loading from '../loading/Loading';
 import styles from './home.module.css'
-import imgd from './nicedog.png'
 
 export function Home(imgd){
     const dispatch= useDispatch()
