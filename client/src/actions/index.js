@@ -11,7 +11,7 @@ export const ORDER_BYWEIGHT = 'ORDER_BYWEIGHT'
 
 export function getDogs() {
     return async function(dispatch){
-        var json = await axios("http://localhost:3001/dogs");
+        var json = await axios("/dogs");
         return dispatch({
             type: GET_DOGS,
             payload: json.data
