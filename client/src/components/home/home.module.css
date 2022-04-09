@@ -13,7 +13,7 @@
     justify-content: flex-start;
 } */
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
     
     .div_render h1{
         display: flex;
@@ -32,7 +32,7 @@
 
 .buttons {
     font-family: 'Fredoka One', cursive;
-    font-size: 24px;
+    font-size: 2vh;
     color: rgb(0, 0, 0);
     background: rgb(199, 139, 27);
     border: none;
@@ -50,21 +50,13 @@
     padding: 3px;
 }
 
-@media (max-width: 1500px) {
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-}
 
 .navbar select{
     border: none;
     background-color:rgb(199, 139, 27);
     font-family: 'Fredoka One', cursive;
-    font-size: 24px;
-
+    font-size: 2vh;
+    
 }
 
 .navbar select:hover {
@@ -80,6 +72,14 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media (max-width: 1500px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
 
 .loading{
     margin-top: 30px;

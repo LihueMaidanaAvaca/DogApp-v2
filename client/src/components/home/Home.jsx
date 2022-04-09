@@ -74,6 +74,7 @@ export function Home(imgd){
     
     return(
         <div className={styles.div_render}><h1>DOG APP</h1>
+        <SearchBar/>
            <div className={styles.navbar}>
                <select defaultValue='default' onChange={(e)=>handleFilterTemp(e)}>
                     <option name='temp' key={'a'}>Temperaments</option>
@@ -98,7 +99,6 @@ export function Home(imgd){
                </select>
                         <button className={styles.buttons}onClick={e=> {handleClick(e)}}>Reset</button>
                         <Link to= '/addog'className={styles.buttons}>AddDog+</Link>
-               <SearchBar/>
                </div>
                         <Paginate
                         dogsPerPage= {dogsPerPage}
