@@ -7,6 +7,7 @@ import Card from '../card/Card';
 import Paginate from '../paginate/Paginate';
 import SearchBar from '../searchbar/SearchBar';
 import styles from './home.module.css'
+// import loading from './nicedog.png'
 
 export function Home(imgd){
     const dispatch= useDispatch()
@@ -118,7 +119,10 @@ export function Home(imgd){
                           </Link>
                       </div> 
                        );
-                    }):<p>Loading...</p>
+                    }):<img src="https://www.pngall.com/wp-content/uploads/2016/06/Bone-Free-Download-PNG.png"
+                    alt="MDN"
+                    srcset="mdn-logo-HD.png 2x"
+                    className={styles.loading}></img>
                 }
                 </div>
        </div>

@@ -80,3 +80,23 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+.loading{
+    position: absolute;
+    height: 50vmin;
+    pointer-events: none;}
+
+    @media (prefers-reduced-motion: no-preference) {
+        .loading {
+          animation: App-logo-spin infinite 2s linear;
+        }
+      }    
+
+    @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }   
