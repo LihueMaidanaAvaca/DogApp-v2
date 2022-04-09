@@ -7,13 +7,14 @@ import Card from '../card/Card';
 import Paginate from '../paginate/Paginate';
 import SearchBar from '../searchbar/SearchBar';
 import styles from './home.module.css'
-// import loading from './nicedog.png'
+import loading from './loading dots.png'
+import dogbone from './dogbone.png'
 
 export function Home(imgd){
     const dispatch= useDispatch()
     const allDogs = useSelector((state) => state.allDogs)
     const [orden, setOrden] = useState('')
-    const [loading, setLoading] = useState(true)
+    // const [loading, setLoading] = useState(true)
     const [currentPage, setCurrentPage] = useState(1)
     const [dogsPerPage, setDogsPerPage] = useState(8)
     const indexOfLastDog = currentPage * dogsPerPage
@@ -28,7 +29,6 @@ export function Home(imgd){
     console.log('home', allDogs)
     useEffect(()=>{
         dispatch(getDogs());
-        setLoading(false)
     },[dispatch])
 
 
@@ -119,10 +119,10 @@ export function Home(imgd){
                           </Link>
                       </div> 
                        );
-                    }):<img src="https://www.pngall.com/wp-content/uploads/2016/06/Bone-Free-Download-PNG.png"
+                    }):<img src={dogbone}
                     alt="MDN"
                     srcset="mdn-logo-HD.png 2x"
-                    className={styles.loading}></img>
+                    className={styles.loading}/>
                 }
                 </div>
        </div>
