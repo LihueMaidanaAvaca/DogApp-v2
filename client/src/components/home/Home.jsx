@@ -107,7 +107,7 @@ export function Home(imgd){
 
               <div className={`${styles.cards}`} >
 
-               { !loading ? currentDogs.map(dog=>{
+               { currentDogs.length>0? currentDogs.map(dog=>{
                    console.log('onedog', dog);
                    return (
                        <div key={dog.id}>
