@@ -10,7 +10,7 @@ ul.pagination li a {
     color: rgb(255, 255, 255);
     background-color: rgb(175, 120, 2);
     float: left;
-    padding: 8px 16px;
+    padding: 3px 3px;
     text-decoration: none;
     border: 1px solid rgb(170, 130, 45);
     font-size:x-small;
@@ -21,3 +21,6 @@ ul.pagination li a:hover:not(.active) {
     color: black;
     background-color: #ddd;}
 
+a.pagination{
+    pointer-events: auto;
+}

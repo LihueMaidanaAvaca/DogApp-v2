@@ -119,10 +119,12 @@ export function Home(imgd){
                           </Link>
                       </div> 
                        );
-                    }):<img src={dogbone}
+                    }):
+                    <div>
+                    <img src={dogbone}
                     alt="MDN"
-                    srcset="mdn-logo-HD.png 2x"
                     className={styles.loading}/>
+                    </div>
                 }
                 </div>
        </div>

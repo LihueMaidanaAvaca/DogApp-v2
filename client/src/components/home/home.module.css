@@ -83,7 +83,6 @@
 
 .loading{
     margin-top: 30px;
-    position: absolute;
     height: 50vmin;
     pointer-events: none;}
 
