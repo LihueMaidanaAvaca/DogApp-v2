@@ -47,7 +47,8 @@ const getApiInfo = async () => {
             Temperaments: dog.temperament?.split(', ').map(t=> { 
                 return{ name: t}}),
             image: dog.image.url,
-            tempers: dog.temperament
+            tempers: dog.temperament,
+            breed_group: dog.breed_group
         };
     });
     return apiInfo;

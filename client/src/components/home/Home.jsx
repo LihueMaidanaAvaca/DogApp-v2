@@ -10,7 +10,7 @@ import styles from './home.module.css'
 import loading from './loading dots.png'
 import dogbone from './dogbone.png'
 
-export function Home(imgd){
+export function Home(){
     const dispatch= useDispatch()
     const allDogs = useSelector((state) => state.allDogs)
     const [orden, setOrden] = useState('')
