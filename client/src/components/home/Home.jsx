@@ -77,7 +77,7 @@ export function Home(){
         <SearchBar/>
            <div className={styles.navbar}>
                <select defaultValue='default' onChange={(e)=>handleFilterTemp(e)}>
-                    <option name='temp' key={'a'}>Temperaments</option>
+                    <option name='temp' key={'a'}>Personality</option>
                     {temperaments.map((tem,i)=>(
                         <option name='temperaments'key={i} value={tem.name}>{tem.name}</option>
                         ))}
@@ -120,7 +120,7 @@ export function Home(){
                       </div> 
                        );
                     }):
-                    <div>
+                    <div className={styles.bone}>
                     <img src={dogbone}
                     alt="MDN"
                     className={styles.loading}/>

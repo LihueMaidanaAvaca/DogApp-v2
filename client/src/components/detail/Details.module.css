@@ -22,7 +22,7 @@
     background-color: rgba(160, 117, 0, 0.37);
     border-radius: 20px;
     padding-bottom: 7px;
-    max-width: 950px;;
+    max-width: 950px;
     display: flex;
     flex-direction: column;
 }
